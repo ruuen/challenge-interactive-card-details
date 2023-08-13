@@ -1,0 +1,25 @@
+// Font Imports
+@font-face {
+    font-display: swap; 
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/space-grotesk-v15-latin-500.woff2') format('woff2'); 
+  }
+
+// Colours
+$clr-white: rgba(255, 255, 255, 1);
+$clr-grey-light: rgba(223, 222, 224, 1);
+$clr-grey: rgba(173, 181, 190, 1);
+$clr-grey-dark: rgba(47, 47, 47, 1);
+$clr-violet-dark: rgba(33, 9, 47, 1);
+$clr-red: rgba(255, 80, 80, 1);
+$gradient-purple: linear-gradient(rgba(99, 72, 254, 1) 0%, rgba(97, 5, 149, 1) 100%);
+
+// Fonts
+$font: "Space Grotesk", sans-serif;
+$font-weight: 500;
+
+// Breakpoints
+$breakpoint-tablet: 650px;
+$breakpoint-desktop: 900px;
