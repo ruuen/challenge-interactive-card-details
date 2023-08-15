@@ -1,3 +1,4 @@
+import "./ConfirmationView.scss";
 import iconComplete from "../assets/images/icon-complete.svg";
 import Button from "./Button";
 

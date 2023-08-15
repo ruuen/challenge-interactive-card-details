@@ -1,0 +1,66 @@
+@use "../scss/variables.scss" as var;
+
+.form-wrapper {
+  padding: 1em 1.5em 1.5em 1.5em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+
+  &__input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    // grows every input group to container width
+    flex-grow: 1;
+
+    &--cvc {
+      flex-basis: 125%;
+    }
+  }
+
+  &__label {
+    color: var.$clr-violet-dark;
+    font-size: 0.825rem;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    min-width: 0;
+  }
+
+  &__input {
+    border: 1px solid var.$clr-grey-light;
+    border-radius: 8px;
+    padding: 0.5em 0.75em;
+    font-family: var.$font;
+    font-size: 1.125rem;
+    font-weight: var.$font-weight;
+    min-width: 0;
+    // grows every input to group width
+    flex-grow: 1;
+
+    &--expiry {
+      width: 50%;
+    }
+
+    &--cvc {
+      width: 100%;
+    }
+
+    &::placeholder {
+      color: var.$clr-grey;
+    }
+  }
+
+  &__date-group {
+    display: flex;
+    gap: 0.5em;
+  }
+
+  &__group-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+}

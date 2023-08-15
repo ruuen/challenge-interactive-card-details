@@ -1,6 +1,6 @@
 function CardCvcInput({ label, placeholder }) {
   return (
-    <div className="form__input-group">
+    <div className="form__input-group form__input-group--cvc">
       <label htmlFor="cvc" className="form__label">
         {`${label}`}
       </label>

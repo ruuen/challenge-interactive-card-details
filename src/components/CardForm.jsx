@@ -1,3 +1,4 @@
+import "./CardForm.scss";
 import TextInput from "./TextInput";
 import CardNumberInput from "./CardNumberInput";
 import CardExpiryInput from "./CardExpiryInput";
@@ -20,8 +21,10 @@ function CardForm() {
           label="Card Number"
           placeholder="e.g. 1234 5678 9123 0000"
         />
-        <CardExpiryInput label="Expiry Date" monthFormat="MM" yearFormat="YY" />
-        <CardCvcInput label="CVC" placeholder="e.g. 123" />
+        <div className="form__group-wrapper">
+          <CardExpiryInput label="Exp. Date" monthFormat="MM" yearFormat="YY" />
+          <CardCvcInput label="CVC" placeholder="e.g. 123" />
+        </div>
         <Button
           text="Confirm"
           handleClick={() => {

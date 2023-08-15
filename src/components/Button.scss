@@ -1,0 +1,13 @@
+@use "../scss/variables.scss" as var;
+
+.button {
+  font-family: var.$font;
+  font-weight: var.$font-weight;
+  background: var.$clr-violet-dark;
+  border: 0;
+  font-size: 1.125rem;
+  color: var.$clr-white;
+  border-radius: 8px;
+  padding: 0.8em;
+  margin-top: 0.75em;
+}
