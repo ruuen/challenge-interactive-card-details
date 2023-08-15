@@ -1,4 +1,31 @@
-// Temp
+@use "../scss/variables.scss" as var;
+
 .confirmation {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1.5em 1.5em 1.5em;
+  gap: 2.25em;
+
+  &__message-wrapper {
+    text-align: center;
+  }
+
+  &__icon {
+    max-width: 25%;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    color: var.$clr-violet-dark;
+    font-size: 1.75rem;
+    font-weight: var.$font-weight;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+  }
+
+  &__message {
+    color: var.$clr-grey;
+    padding: 1em 0 0 0;
+    font-size: 1.125rem;
+  }
 }

@@ -11,8 +11,10 @@ function ConfirmationView() {
         className="confirmation__icon"
         aria-hidden
       />
-      <h2 className="confirmation__heading">Thank you!</h2>
-      <p className="confirmation__message">We've added your card details.</p>
+      <div className="confirmation__message-wrapper">
+        <h2 className="confirmation__heading">Thank you!</h2>
+        <p className="confirmation__message">We've added your card details.</p>
+      </div>
       <Button
         text="Continue"
         handleClick={() => {
