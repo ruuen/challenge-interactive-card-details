@@ -40,6 +40,10 @@
     // grows every input to group width
     flex-grow: 1;
 
+    &--error {
+      border: 1px solid var.$clr-red;
+    }
+
     &--expiry {
       width: 50%;
     }
@@ -51,6 +55,11 @@
     &::placeholder {
       color: var.$clr-grey;
     }
+  }
+
+  &__error-message {
+    color: var.$clr-red;
+    font-size: 0.825rem;
   }
 
   &__date-group {
