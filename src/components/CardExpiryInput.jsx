@@ -25,10 +25,13 @@ function CardExpiryInput({
 
   return (
     <div className="form__input-group form__input-group--expiry">
-      <span className="form__label">{`${label} (${monthOptions.format}/${yearOptions.format})`}</span>
+      <span
+        className="form__label"
+        aria-hidden
+      >{`${label} (${monthOptions.format}/${yearOptions.format})`}</span>
       <div className="form__input-wrapper">
         <label htmlFor={monthOptions.id} className="visually-hidden">
-          {`Month in ${monthOptions.format.length} digits`}
+          {`Expiry month in ${monthOptions.format.length} digits`}
         </label>
         <input
           ref={monthRef}
@@ -42,7 +45,7 @@ function CardExpiryInput({
           placeholder={monthOptions.format}
         />
         <label htmlFor={yearOptions.id} className="visually-hidden">
-          {`Year in ${yearOptions.format.length} digits`}
+          {`Expiry year in ${yearOptions.format.length} digits`}
         </label>
         <input
           ref={yearRef}

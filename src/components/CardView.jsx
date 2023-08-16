@@ -13,18 +13,33 @@ function CardView({ cardholderName, cardNumber, cardExpiry, cardCvc }) {
   const cvcOrPlaceholder = cardCvc !== "" ? cardCvc : "000";
 
   return (
-    <aside className="card-group">
-      <div className="card card__front">
-        <img src={imgCardFront} alt="" className="card__background" />
-        <img src={imgCardLogo} alt="" className="card__logo" />
+    <aside
+      className="card-group"
+      aria-label="An illustration of the front and back of a payment card."
+    >
+      <div className="card card__front" aria-hidden>
+        <img
+          src={imgCardFront}
+          alt="Illustration of the front of a payment card."
+          className="card__background"
+        />
+        <img
+          src={imgCardLogo}
+          alt="Two circles of different colours and size next to each other horizontally"
+          className="card__logo"
+        />
         <span className="card__text card__cc-no">
           {`${cardNumberOrPlaceholder}`}
         </span>
         <span className="card__text card__name">{`${cardholderNameOrPlaceholder}`}</span>
         <span className="card__text card__expiry">{`${monthOrPlaceholder}/${yearOrPlaceholder}`}</span>
       </div>
-      <div className="card card__back">
-        <img src={imgCardBack} alt="" className="card__background" />
+      <div className="card card__back" aria-hidden>
+        <img
+          src={imgCardBack}
+          alt="Illustration of the back of a payment card."
+          className="card__background"
+        />
         <span className="card__text card__cvc">{cvcOrPlaceholder}</span>
       </div>
     </aside>
