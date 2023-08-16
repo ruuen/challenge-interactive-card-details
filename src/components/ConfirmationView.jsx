@@ -2,7 +2,7 @@ import "./ConfirmationView.scss";
 import iconComplete from "../assets/images/icon-complete.svg";
 import Button from "./Button";
 
-function ConfirmationView() {
+function ConfirmationView({ handleReset }) {
   return (
     <div className="confirmation">
       <img
@@ -15,12 +15,7 @@ function ConfirmationView() {
         <h2 className="confirmation__heading">Thank you!</h2>
         <p className="confirmation__message">We've added your card details.</p>
       </div>
-      <Button
-        text="Continue"
-        handleClick={() => {
-          console.log("Continuing");
-        }}
-      />
+      <Button text="Continue" handleClick={handleReset} />
     </div>
   );
 }
