@@ -1,6 +1,7 @@
 @use "../scss/variables.scss" as var;
 
 .card-group {
+  position: relative;
   background-color: var.$clr-violet-dark;
   padding: 1em 0;
   margin-bottom: -3em;
@@ -9,6 +10,15 @@
   justify-content: center;
   align-items: center;
   transform: translateY(-7.75em);
+
+  &__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .card {
@@ -74,5 +84,42 @@
   &__cvc {
     top: 43.7%;
     right: 12.5%;
+  }
+}
+
+@media (min-width: var.$breakpoint-desktop) {
+  .card-group {
+    transform: translate(-12.5em, 0);
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 0;
+    gap: 2em;
+    padding: 0;
+    flex-basis: 50%;
+  }
+
+  .card {
+    max-width: 70%;
+
+    &__cc-no {
+      font-size: clamp(0.725rem, 2vw, 1.75rem);
+    }
+
+    &__cvc {
+      font-size: clamp(0.65rem, 1.3vw, 0.95rem);
+    }
+
+    &__front {
+      margin-right: -5em;
+    }
+
+    &__back {
+      margin-right: -10em;
+    }
+    &__front,
+    &__back {
+      transform: translateY(0);
+      margin-left: 0;
+    }
   }
 }

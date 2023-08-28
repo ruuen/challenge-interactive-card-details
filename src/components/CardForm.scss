@@ -2,11 +2,16 @@
 
 .form-wrapper {
   padding: 1em 1.5em 1.5em 1.5em;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  flex: 1;
   gap: 1.25em;
 
   &__input-group {
@@ -69,5 +74,18 @@
   &__error-message {
     color: var.$clr-red;
     font-size: 0.825rem;
+  }
+}
+
+@media (min-width: var.$breakpoint-tablet) {
+  .form {
+    max-width: 25em;
+  }
+}
+
+@media (min-width: var.$breakpoint-desktop) {
+  .form-wrapper {
+    padding: 0 0 0 5vw;
+    justify-content: flex-start;
   }
 }

@@ -13,11 +13,11 @@
 html,
 body {
   min-height: 100vh;
-  font-family: var.$font;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
+  font-family: var.$font;
 }
 
 p,

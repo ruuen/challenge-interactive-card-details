@@ -2,6 +2,8 @@ import "./CardView.scss";
 import imgCardFront from "../assets/images/bg-card-front.png";
 import imgCardBack from "../assets/images/bg-card-back.png";
 import imgCardLogo from "../assets/images/card-logo.svg";
+import bgCardSectionSmall from "../assets/images/bg-main-mobile.png";
+import bgCardSectionLarge from "../assets/images/bg-main-desktop.png";
 
 function CardView({ cardholderName, cardNumber, cardExpiry, cardCvc }) {
   const cardholderNameOrPlaceholder =
@@ -17,6 +19,15 @@ function CardView({ cardholderName, cardNumber, cardExpiry, cardCvc }) {
       className="card-group"
       aria-label="An illustration of the front and back of a payment card."
     >
+      <picture>
+        <source srcSet={bgCardSectionLarge} media="(min-width: 900px)" />
+        <img
+          src={bgCardSectionSmall}
+          alt="Coloured gradients"
+          className="card-group__background"
+          aria-hidden
+        />
+      </picture>
       <div className="card card__front" aria-hidden>
         <img
           src={imgCardFront}

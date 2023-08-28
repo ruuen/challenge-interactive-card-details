@@ -1,5 +1,12 @@
 @use "../scss/variables.scss" as var;
 
+.confirmation-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .confirmation {
   display: flex;
   flex-direction: column;
@@ -27,5 +34,22 @@
     color: var.$clr-grey;
     padding: 1em 0 0 0;
     font-size: 1.125rem;
+  }
+}
+
+@media (min-width: var.$breakpoint-tablet) {
+  .confirmation-wrapper {
+    align-items: center;
+  }
+
+  .confirmation {
+    max-width: 25em;
+  }
+}
+
+@media (min-width: var.$breakpoint-desktop) {
+  .confirmation-wrapper {
+    padding: 0 0 0 5vw;
+    align-items: stretch;
   }
 }
