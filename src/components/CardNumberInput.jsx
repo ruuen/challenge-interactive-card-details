@@ -6,7 +6,13 @@ const defaultCardMask = {
   mask: "0000{ }0000{ }0000{ }0000{ }000",
 };
 
-function CardNumberInput({ label, placeholder, handleInputChange, errors }) {
+function CardNumberInput({
+  id,
+  label,
+  placeholder,
+  handleInputChange,
+  errors,
+}) {
   const hasError = errors !== undefined ? true : false;
   const [cardMask, setCardMask] = useState(defaultCardMask);
 
@@ -44,13 +50,13 @@ function CardNumberInput({ label, placeholder, handleInputChange, errors }) {
 
   return (
     <div className="form__input-group form__input-group--number">
-      <label htmlFor="name" className="form__label">
+      <label htmlFor={id} className="form__label">
         {`${label}`}
       </label>
       <input
         ref={ref}
         type="text"
-        id="name"
+        id={id}
         className={`form__input form__input--cc-no ${
           errors ? "form__input--error" : ""
         }`}
