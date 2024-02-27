@@ -47,7 +47,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/interactive-card-details-form-with-react-and-scss-AHh83Z-3f_)
-- Live Site URL: [Netlify](https://rd-challenge-interactive-card.netlify.app/)
+- Live Site URL: [Netlify](https://mbr-challenge-interactive-card-details.pages.dev/)
 
 ## My process
 
@@ -114,7 +114,7 @@ I plan to revisit this in future to implement a form plugin for React & make the
 
 ## Author
 
-- Frontend Mentor - [@ruuendigital](https://www.frontendmentor.io/profile/ruuendigital)
+- Frontend Mentor - [@ruuen](https://www.frontendmentor.io/profile/ruuen)
 - Twitter - [@maxruuen](https://www.twitter.com/maxruuen)
 
 ## Acknowledgments
