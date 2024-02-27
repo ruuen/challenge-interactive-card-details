@@ -47,7 +47,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/interactive-card-details-form-with-react-and-scss-AHh83Z-3f_)
-- Live Site URL: [Netlify](https://mbr-challenge-interactive-card-details.pages.dev/)
+- Live Site URL: [Cloudflare Pages](https://mbr-challenge-interactive-card-details.pages.dev/)
 
 ## My process
 
